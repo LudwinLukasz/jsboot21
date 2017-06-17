@@ -1,4 +1,3 @@
-
 var movies = [
 	{
 		id: 1,
@@ -25,13 +24,12 @@ var moviesElements = movies.map(function(movie) {
 		React.createElement('h2', {}, movie.title),
 		React.createElement('p', {}, movie.desc),
 		React.createElement('img', {src: movie.poster})
-		);
+	);
 });
 
-var element = 
-React.createElement('div', {}, 
+var element = React.createElement('div', {}, 
 	React.createElement('h1', {}, 'Lista filmów'),
 	React.createElement('ul', {}, moviesElements)
-	);
+);
 
 ReactDOM.render(element, document.getElementById('app'));
